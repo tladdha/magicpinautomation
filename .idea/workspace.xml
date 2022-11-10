@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13959772-23f0-4fd2-bc66-4da8fcc7fa47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +40,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="181e191b-f11c-4c5e-910d-62b234411505" />
+        <option name="url" value="git@github.com:tladdha/magicpinautomation.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,15 +83,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml">
-    <configuration name="Scenario: Login Magic pin admin portal" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_002 Verify the validations to email and password fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^Login Magic pin admin portal$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login Magic pin admin portal$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login Magic pin admin portal" />
+      <option name="NAME_FILTER" value="^TC_002 Verify the validations to email and password fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Verify the validations to email and password fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Verify the validations to email and password fields" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -100,51 +103,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunCucumberTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;RunCucumberTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="Scenario: TC_003 Verify Forgot Password flow email validations" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
+      <option name="GLUE" value="com.mp.admin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magicPinAutomation.test" />
+      <option name="NAME_FILTER" value="^TC_003 Verify Forgot Password flow email validations$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_003 Verify Forgot Password flow email validations$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_003 Verify Forgot Password flow email validations" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="RunCucumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.magicpin.admin.RunCucumberTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="Scenario: TC_004 Verify Forgot Password flow - Invalid user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
+      <option name="GLUE" value="com.mp.admin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magicPinAutomation.test" />
+      <option name="NAME_FILTER" value="^TC_004 Verify Forgot Password flow \- Invalid user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_004 Verify Forgot Password flow \- Invalid user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_004 Verify Forgot Password flow - Invalid user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC_005 Verify Forgot Password flow - Valid user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
+      <option name="GLUE" value="com.mp.admin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magicPinAutomation.test" />
+      <option name="NAME_FILTER" value="^TC_005 Verify Forgot Password flow \- Valid user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_005 Verify Forgot Password flow \- Valid user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_005 Verify Forgot Password flow - Valid user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Tests in 'magicPinAutomation'" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -172,25 +189,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="/Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/com/mp/admin/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="magicPinAutomation.test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/mp/admin/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="/Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="magicPinAutomation.test" />
       <shortenClasspath name="NONE" />
@@ -214,20 +212,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Login Magic pin admin portal" />
+      <item itemvalue="Cucumber Java.Scenario: TC_002 Verify the validations to email and password fields" />
+      <item itemvalue="Cucumber Java.Scenario: TC_003 Verify Forgot Password flow email validations" />
+      <item itemvalue="Cucumber Java.Scenario: TC_004 Verify Forgot Password flow - Invalid user" />
+      <item itemvalue="Cucumber Java.Scenario: TC_005 Verify Forgot Password flow - Valid user" />
       <item itemvalue="Gradle.Tests in 'magicPinAutomation'" />
-      <item itemvalue="Gradle.RunCucumberTest" />
-      <item itemvalue="Gradle.RunCucumberTest (1)" />
-      <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/com/mp/admin/testng.xml" />
       <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" />
-        <item itemvalue="Cucumber Java.Scenario: Login Magic pin admin portal" />
-        <item itemvalue="Gradle.RunCucumberTest (1)" />
-        <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/com/mp/admin/testng.xml" />
-        <item itemvalue="Gradle.RunCucumberTest" />
+        <item itemvalue="Cucumber Java.Scenario: TC_002 Verify the validations to email and password fields" />
+        <item itemvalue="Cucumber Java.Scenario: TC_005 Verify Forgot Password flow - Valid user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_004 Verify Forgot Password flow - Invalid user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_003 Verify Forgot Password flow email validations" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +245,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
