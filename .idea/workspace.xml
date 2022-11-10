@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13959772-23f0-4fd2-bc66-4da8fcc7fa47" name="Changes" comment="Initial version">
+    <list default="true" id="13959772-23f0-4fd2-bc66-4da8fcc7fa47" name="Changes" comment="Refactored the code as per PageObject latest model.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials">
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal">
     <configuration name="Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
@@ -121,15 +122,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC_004 Verify Forgot Password flow - Invalid user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_005 Verify Forgot Password flow - Valid user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^TC_004 Verify Forgot Password flow \- Invalid user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_004 Verify Forgot Password flow \- Invalid user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_004 Verify Forgot Password flow - Invalid user" />
+      <option name="NAME_FILTER" value="^TC_005 Verify Forgot Password flow \- Valid user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_005 Verify Forgot Password flow \- Valid user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_005 Verify Forgot Password flow - Valid user" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -141,15 +142,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC_005 Verify Forgot Password flow - Valid user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_006 Verify Successful Login Magic pin admin portal" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^TC_005 Verify Forgot Password flow \- Valid user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_005 Verify Forgot Password flow \- Valid user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_005 Verify Forgot Password flow - Valid user" />
+      <option name="NAME_FILTER" value="^TC_006 Verify Successful Login Magic pin admin portal$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_006 Verify Successful Login Magic pin admin portal$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -211,19 +212,19 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" />
+      <item itemvalue="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
       <item itemvalue="Cucumber Java.Scenario: TC_002 Verify the validations to email and password fields" />
-      <item itemvalue="Cucumber Java.Scenario: TC_004 Verify Forgot Password flow - Invalid user" />
       <item itemvalue="Cucumber Java.Scenario: TC_005 Verify Forgot Password flow - Valid user" />
       <item itemvalue="Gradle.Tests in 'magicPinAutomation'" />
       <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" />
+        <item itemvalue="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
         <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" />
+        <item itemvalue="Cucumber Java.Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" />
         <item itemvalue="Cucumber Java.Scenario: TC_002 Verify the validations to email and password fields" />
         <item itemvalue="Cucumber Java.Scenario: TC_005 Verify Forgot Password flow - Valid user" />
-        <item itemvalue="Cucumber Java.Scenario: TC_004 Verify Forgot Password flow - Invalid user" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668082676550</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit for feature branch">
+      <created>1668093246163</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668093246163</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +294,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial version" />
+    <MESSAGE value="Initial commit for feature branch" />
+    <MESSAGE value="Refactored the code as per PageObject latest model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored the code as per PageObject latest model." />
   </component>
 </project>

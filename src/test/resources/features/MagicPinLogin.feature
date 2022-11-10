@@ -54,10 +54,8 @@ Feature: Magic Pin Login
     Given Launch the admin portal
     When Entering valid "<userName>" and "<Passwords>" credentials
     And Tap on Login
-    Then User should get logged in to the Admin portal
+    Then User should get logged in to the Admin portal "<LoggedInText>"
     And Validate the page should be users page
     Examples:
-      | userName              | Passwords    |
-      | tladdha@freshworks.io | Ssgmpr@tcs21 |
-
-
+      | userName              | Passwords    | LoggedInText      |
+      | tladdha@freshworks.io | Ssgmpr@tcs21 | SYSTEM MANAGEMENT |
