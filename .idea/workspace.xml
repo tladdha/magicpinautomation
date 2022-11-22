@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13959772-23f0-4fd2-bc66-4da8fcc7fa47" name="Changes" comment="Refactored the code as per PageObject latest model.">
+    <list default="true" id="13959772-23f0-4fd2-bc66-4da8fcc7fa47" name="Changes" comment="Committed code for UserPage Automation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/DriverStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/UsersStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/UsersPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,15 +86,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal">
-    <configuration name="Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_003 Verify deleting a user from admin portal" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
+      </envs>
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinUsers.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^TC_001 Verify the error for password miss\-match while entering invalid credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 Verify the error for password miss\-match while entering invalid credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" />
+      <option name="NAME_FILTER" value="^TC_003 Verify deleting a user from admin portal$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_003 Verify deleting a user from admin portal$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_003 Verify deleting a user from admin portal" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -102,35 +110,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC_002 Verify the validations to email and password fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_005 Verify the conversion of the Trial user back to Free user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
+      </envs>
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinUsers.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^TC_002 Verify the validations to email and password fields$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Verify the validations to email and password fields$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Verify the validations to email and password fields" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: TC_005 Verify Forgot Password flow - Valid user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
-      <option name="GLUE" value="com.mp.admin" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^TC_005 Verify Forgot Password flow \- Valid user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_005 Verify Forgot Password flow \- Valid user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_005 Verify Forgot Password flow - Valid user" />
+      <option name="NAME_FILTER" value="^TC_005 Verify the conversion of the Trial user back to Free user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_005 Verify the conversion of the Trial user back to Free user$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_005 Verify the conversion of the Trial user back to Free user" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -144,12 +136,16 @@
     </configuration>
     <configuration name="Scenario: TC_006 Verify Successful Login Magic pin admin portal" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
+      </envs>
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
       <option name="NAME_FILTER" value="^TC_006 Verify Successful Login Magic pin admin portal$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_006 Verify Successful Login Magic pin admin portal$&quot;" />
+      <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
@@ -158,6 +154,64 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC_006 Verify the conversion of the Free user to Grandfather user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
+      </envs>
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinUsers.feature" />
+      <option name="GLUE" value="com.mp.admin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magicPinAutomation.test" />
+      <option name="NAME_FILTER" value="^TC_006 Verify the conversion of the Free user to Grandfather user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_006 Verify the conversion of the Free user to Grandfather user$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_006 Verify the conversion of the Free user to Grandfather user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC_007 Verify the conversion of the Grandfather to Free user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
+      </envs>
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinUsers.feature" />
+      <option name="GLUE" value="com.mp.admin" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magicPinAutomation.test" />
+      <option name="NAME_FILTER" value="^TC_007 Verify the conversion of the Grandfather to Free user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_007 Verify the conversion of the Grandfather to Free user$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_007 Verify the conversion of the Grandfather to Free user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
+      </envs>
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,43 +242,21 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="/Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="magicPinAutomation.test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs>
-        <env name="CUCUMBER_PUBLISH_TOKEN" value="0baad720-36b6-4985-ae80-d12586dae4dd" />
-      </envs>
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" />
+      <item itemvalue="Cucumber Java.Scenario: TC_005 Verify the conversion of the Trial user back to Free user" />
       <item itemvalue="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
-      <item itemvalue="Cucumber Java.Scenario: TC_002 Verify the validations to email and password fields" />
-      <item itemvalue="Cucumber Java.Scenario: TC_005 Verify Forgot Password flow - Valid user" />
+      <item itemvalue="Cucumber Java.Scenario: TC_006 Verify the conversion of the Free user to Grandfather user" />
+      <item itemvalue="Cucumber Java.Scenario: TC_007 Verify the conversion of the Grandfather to Free user" />
+      <item itemvalue="Cucumber Java.Scenario: TC_003 Verify deleting a user from admin portal" />
       <item itemvalue="Gradle.Tests in 'magicPinAutomation'" />
-      <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
-        <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/magicPinAutomation/src/test/java/testng.xml" />
-        <item itemvalue="Cucumber Java.Scenario: TC_001 Verify the error for password miss-match while entering invalid credentials" />
-        <item itemvalue="Cucumber Java.Scenario: TC_002 Verify the validations to email and password fields" />
-        <item itemvalue="Cucumber Java.Scenario: TC_005 Verify Forgot Password flow - Valid user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_007 Verify the conversion of the Grandfather to Free user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_006 Verify the conversion of the Free user to Grandfather user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_005 Verify the conversion of the Trial user back to Free user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_003 Verify deleting a user from admin portal" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668093246163</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactored the code as per PageObject latest model.">
+      <created>1668105704139</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668105704139</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +335,13 @@
     <MESSAGE value="Initial version" />
     <MESSAGE value="Initial commit for feature branch" />
     <MESSAGE value="Refactored the code as per PageObject latest model." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored the code as per PageObject latest model." />
+    <MESSAGE value="Committed code for UserPage Automation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committed code for UserPage Automation" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/magicPinAutomation$_Users_tusharladdha_Documents_magicPinAutomation_magicPinAutomation_src_test_testng_xml.ic" NAME="$PROJECT_DIR$/src/test/testng.xml Coverage Results" MODIFIED="1668429860887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__TC_001_Verify_user_able_to_tap_on_all_the_subscription_plan______Example_n_1.ic" NAME="Scenario: TC_001_Verify user able to tap on all the subscription plan -  - Example n°1 Coverage Results" MODIFIED="1668607923959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>
