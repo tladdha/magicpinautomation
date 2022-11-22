@@ -14,6 +14,7 @@ public class DriverStep {
         chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
 //        driver = new ChromeDriver();
+        //Commented
     }
 
     public static DriverStep getInstance(){

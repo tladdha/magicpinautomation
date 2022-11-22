@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13959772-23f0-4fd2-bc66-4da8fcc7fa47" name="Changes" comment="Committed code for UserPage Automation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/DriverStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/UsersStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/UsersPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/LoginStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/DriverStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/DriverStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal">
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC_007 Verify the conversion of the Grandfather to Free user">
     <configuration name="Scenario: TC_003 Verify deleting a user from admin portal" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <envs>
@@ -252,8 +246,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
         <item itemvalue="Cucumber Java.Scenario: TC_007 Verify the conversion of the Grandfather to Free user" />
+        <item itemvalue="Cucumber Java.Scenario: TC_006 Verify Successful Login Magic pin admin portal" />
         <item itemvalue="Cucumber Java.Scenario: TC_006 Verify the conversion of the Free user to Grandfather user" />
         <item itemvalue="Cucumber Java.Scenario: TC_005 Verify the conversion of the Trial user back to Free user" />
         <item itemvalue="Cucumber Java.Scenario: TC_003 Verify deleting a user from admin portal" />
@@ -290,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668105704139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Committed code for UserPage Automation">
+      <created>1669143177480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669143177480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
