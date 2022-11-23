@@ -61,6 +61,8 @@ public class UsersPage {
     WebElement grandfather_button;
     @FindBy(xpath = "//span[text()=\"Change to Free\"]/parent::button")
     WebElement changeToFree_button;
+    @FindBy(xpath = "//p[text()='Users']/parent::span/parent::a")
+    WebElement mainUsers_Text;
 
 
     //Define all identification methods here...
@@ -80,7 +82,7 @@ public class UsersPage {
                 Assert.fail("Subscription Plan not found..");
             }
         });
-        driver.quit();
+        //driver.quit()
     }
 
     public void clickOnAllAvailableSubscriptionPlan(){
@@ -89,7 +91,7 @@ public class UsersPage {
                 WebElement cPlan = driver.findElement(By.xpath("//span[text()='"+Plan+"']/parent::button"));
                 cPlan.click();
             }
-            driver.quit();
+            //driver.quit()
         }catch (Exception e)
         {
             Assert.fail("User Plan not found.."+e.getMessage());
@@ -106,7 +108,7 @@ public class UsersPage {
     }
     public void tapOnAddBoardsLink(){
         try{
-            Thread.sleep(3000);
+            Thread.sleep(4000);
             verifyElementPresentOnScreen(addBoard_link);
             addBoard_link.click();
         }catch (Exception e)
@@ -154,10 +156,10 @@ public class UsersPage {
             verifyElementPresentOnScreen(success_popup);
             String aText = success_popup.getText();
             Assert.assertEquals("Success Message for Board addition is not matched..",aText, eText);
-            driver.quit();
+            //driver.quit()
         }catch (Exception e){
             Assert.fail("Success popup not appeared.."+e.getMessage());
-            driver.quit();
+            //driver.quit()
         }
     }
     public void sortUserByNameAsDESC(){
@@ -186,7 +188,7 @@ public class UsersPage {
             verifyElementPresentOnScreen(deleteConfirmation_Text);
             Assert.assertEquals(eText+" - Text not found!", eText, deleteConfirmation_Text.getText());
             //Assert.assertTrue(eText+" - Text not found!", driver.getPageSource().contains(eText));
-            driver.quit();
+            //driver.quit()
         }catch (Exception e){
             Assert.fail("Delete Confirmation Text not found! "+e.getMessage());
         }
@@ -225,7 +227,7 @@ public class UsersPage {
         try{
             verifyElementPresentOnScreen(errorPath_text);
             Assert.assertEquals("Text for confirmation not matching",msg,errorPath_text.getText());
-            driver.quit();
+            //driver.quit()
         }catch (Exception e)
         {
             Assert.fail("Something went wrong while selecting the duration.."+e.getMessage());
@@ -258,5 +260,21 @@ public class UsersPage {
             Assert.fail("Something went wrong while loading the grandfather section list.. "+e.getMessage());
         }
     }
-
+    public void tapOnMainUsersSection(){
+        try{
+            verifyElementPresentOnScreen(mainUsers_Text);
+            mainUsers_Text.click();
+            verifyElementPresentOnScreen(firstLineUser_row);
+        }catch (Exception e){
+            Assert.fail("Something went wrong while tapping on the Users section :"+e.getMessage());
+        }
+    }
+    public void waitingForFirstRowToBeAppears(){
+        try{
+            Thread.sleep(3000);
+            verifyElementPresentOnScreen(firstLineUser_row);
+        }catch (Exception e){
+            Assert.fail("Something went wrong while page load :"+e.getMessage());
+        }
+    }
 }

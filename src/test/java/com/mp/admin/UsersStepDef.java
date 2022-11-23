@@ -84,6 +84,17 @@ public class UsersStepDef {
         usersPage.tapOnTheGrandfatherSection();
     }
 
+    @When("Tap on Main Users section")
+    public void tapOnMainUsersSection() {
+        usersPage.tapOnMainUsersSection();
+
+    }
+
+    @When("Waiting for first row appears")
+    public void waitingForFirstRowAppears() {
+        usersPage.waitingForFirstRowToBeAppears();
+    }
+
 //    @Then("Verify User Deletion Confirmation {string}")
 //    public void verifyUserDeletionConfirmation(String arg0) {
 //        usersPage.verifyUserDeletionConfirmation(arg0);

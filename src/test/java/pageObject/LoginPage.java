@@ -73,11 +73,11 @@ public class LoginPage {
             waitTillElementVisible(errorPath_text);
             String errText = errorPath_text.getText();
             Assert.assertEquals(errText, message, "Error Message Text not Matched..");
-            driver.quit();
+            //driver.close();
         }catch (Exception e){
             Assert.fail("Error message over screen not found..");
             System.out.println("Error message over screen not found.. "+e.getMessage());
-            driver.quit();
+            //driver.close();
         }
     }
     public void validateSuccessMessageResetPass(String expectedMessage, String expectedConfirmPopup){
@@ -88,11 +88,11 @@ public class LoginPage {
             waitTillElementVisible(successReset_text);
             String actualConfirmText = successReset_text.getText();
             Assert.assertEquals(actualConfirmText, expectedMessage, "Confirmation text not matched with expected..");
-            driver.quit();
+            //driver.close();
         }catch (Exception e){
             Assert.fail("Reset Password confirmation not provided by application..");
             System.out.println("Reset Password confirmation not provided by application "+ e.getMessage());
-            driver.quit();
+            //driver.close();
         }
     }
 
@@ -104,11 +104,11 @@ public class LoginPage {
             waitTillElementVisible(passError_Text);
             String actPassText = passError_Text.getText();
             Assert.assertEquals(actPassText,expPassText, "Expected password validation text not match with Actual..");
-            driver.quit();
+            //driver.close();
         }catch (Exception e){
             Assert.fail("Error text for email or Password not found..");
             System.out.println("Error text for email or Password not found "+e.getMessage());
-            driver.quit();
+            //driver.close();
         }
     }
 
@@ -137,11 +137,11 @@ public class LoginPage {
             waitTillElementVisible(emailError_Text);
             String actualText = emailError_Text.getText();
             Assert.assertEquals(actualText,expectedText, "Expected email error text not match with Actual..");
-            driver.quit();
+            //driver.close();
         }catch (Exception e){
             Assert.fail("Email Error Text not found..");
             System.out.println("Email Error Text not found "+e.getMessage());
-            driver.quit();
+            //driver.close();
         }
     }
     public void validateUserLoginState(String string){
