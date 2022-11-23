@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669143177480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated as per requested comment">
+      <created>1669147886560</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669147886560</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,7 +344,8 @@
     <MESSAGE value="Initial commit for feature branch" />
     <MESSAGE value="Refactored the code as per PageObject latest model." />
     <MESSAGE value="Committed code for UserPage Automation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Committed code for UserPage Automation" />
+    <MESSAGE value="Updated as per requested comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated as per requested comment" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/magicPinAutomation$_Users_tusharladdha_Documents_magicPinAutomation_magicPinAutomation_src_test_testng_xml.ic" NAME="$PROJECT_DIR$/src/test/testng.xml Coverage Results" MODIFIED="1668429860887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
