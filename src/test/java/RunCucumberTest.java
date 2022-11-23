@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",
-        glue = {"LoginStepDef.java","UsersStepDef.java"}
+        features={"MagicPinLogin.feature", "MagicPinUsers.feature","MagicPinAdvertisement.feature"},
+        glue = {"LoginStepDef.java","UsersStepDef.java","AdvertisementStepDef.java"}
 )
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 

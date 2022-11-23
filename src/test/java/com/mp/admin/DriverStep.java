@@ -10,10 +10,10 @@ public class DriverStep {
 
     private DriverStep(){
         WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        driver = new ChromeDriver(chromeOptions);
-//        driver = new ChromeDriver();
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--headless");
+//        driver = new ChromeDriver(chromeOptions);
+        driver = new ChromeDriver();
         //Commented
     }
 
