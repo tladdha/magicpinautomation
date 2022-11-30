@@ -95,6 +95,16 @@ public class UsersStepDef {
         usersPage.waitingForFirstRowToBeAppears();
     }
 
+    @And("Enter the search text and search result for {string}")
+    public void enterTheSearchTextAndSearchResultFor(String arg0) {
+        usersPage.searchTheInputText(arg0);
+
+    }
+
+    @Then("Verify the searched text {string} is present in the result")
+    public void verifyTheSearchedTextIsPresentInTheResult(String arg0) {
+        usersPage.verifyTheSearchTextIsPartOfResult(arg0);
+    }
 
 
 //    @Then("Verify User Deletion Confirmation {string}")

@@ -10,8 +10,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AdvertisementPage {
+
     WebDriver driver;
     public AdvertisementPage(WebDriver driver){
         this.driver = driver;
@@ -32,6 +35,7 @@ public class AdvertisementPage {
 
     @FindBy(xpath = "//span[text()= \"Update Name\"]/parent::button")
     WebElement updateName_button;
+
 
     public void verifyElementPresentOnScreen(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
@@ -67,4 +71,40 @@ public class AdvertisementPage {
             Assert.fail("Not able to find Advertisement with renamed name : "+fromText+" :"+e.getMessage());
         }
     }
+    public void tapOnTheInactiveAddButton(String str){
+        WebElement statusButton = driver.findElement(By.xpath("//a[text()= '"+str+"']/parent::td/parent::tr//td[3]//button"));
+        statusButton.click();
+    }
+    public void verifyTheButtonStatus(String addName, String addStatus){
+        try{
+            Thread.sleep(4000);
+            verifyElementPresentOnScreen(firstLine_text);
+            String statusText = driver.findElement(By.xpath("//a[text()= '"+addName+"']/parent::td/parent::tr//td[3]//button/span")).getText();
+            Assert.assertEquals("Status of the button not match with the expected..",addStatus,statusText);
+        }catch (Exception e){
+            Assert.fail("Add status not changed as per expected.."+e.getMessage());
+        }
+    }
+    public void tapOnTheDeleteAddButton(String addName){
+        WebElement deleteButton = driver.findElement(By.xpath("//a[text()= '"+addName+"']/parent::td/parent::tr//td[4]//button[2]"));
+        verifyElementPresentOnScreen(deleteButton);
+        deleteButton.click();
+    }
+    public void verifyTheAddWithNameNotPresent(String addName){
+        try{
+            Thread.sleep(4000);
+            verifyElementPresentOnScreen(firstLine_text);
+            List <WebElement> adds = driver.findElements(By.xpath("//tr//td//a"));
+            List <String> addNames = new ArrayList<>();
+            for (WebElement name: adds) {
+                String n = name.getText();
+                addNames.add(n);
+            }
+            Assert.assertTrue("The name of add still present in the page.", !(addNames.contains("addName")));
+
+        }catch(Exception e){
+            Assert.fail("Not able to verify the name of the add on the page "+e.getMessage());
+        }
+    }
+
 }

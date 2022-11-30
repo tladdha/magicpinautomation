@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1192aa83-ae06-4e83-b639-bee27d28358f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/AdvertisementStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/AdvertisementPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/MagicPinAdvertisement.feature" afterDir="false" />
+    <list default="true" id="1192aa83-ae06-4e83-b639-bee27d28358f" name="Changes" comment="Initial commit for Advertisement page automation">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/03_MagicPinAdvertisement.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/DriverStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/DriverStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/AdvertisementStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/AdvertisementStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mp/admin/UsersStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mp/admin/UsersStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/AdvertisementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/AdvertisementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/UsersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/UsersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MagicPinAdvertisement.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MagicPinLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/01_MagicPinLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MagicPinUsers.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/02_MagicPinUsers.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +60,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Advertisement_TC_002 Verify the user is able to edit the name of an advertisement">
-    <configuration name="Scenario: Advertisement_TC_001 Verify the user is able to add new Advertisement" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: 02_MagicPinUsers">
+    <configuration name="Feature: 02_MagicPinUsers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinAdvertisement.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/02_MagicPinUsers.feature" />
       <option name="GLUE" value="com.mp.admin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^Advertisement_TC_001 Verify the user is able to add new Advertisement$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Advertisement_TC_001 Verify the user is able to add new Advertisement$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Advertisement_TC_001 Verify the user is able to add new Advertisement" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: 02_MagicPinUsers" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -86,15 +95,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Advertisement_TC_002 Verify the user is able to edit the name of an advertisement" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Users_TC_008 Verify the Search functionality working fine" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MagicPinAdvertisement.feature" />
-      <option name="GLUE" value="com.mp.admin" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/02_MagicPinUsers.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magicPinAutomation.test" />
-      <option name="NAME_FILTER" value="^Advertisement_TC_002 Verify the user is able to edit the name of an advertisement$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Advertisement_TC_002 Verify the user is able to edit the name of an advertisement$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Advertisement_TC_002 Verify the user is able to edit the name of an advertisement" />
+      <option name="NAME_FILTER" value="^Users_TC_008 Verify the Search functionality working fine$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Users_TC_008 Verify the Search functionality working fine$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Users_TC_008 Verify the Search functionality working fine" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -106,32 +114,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MagicPinAdvertisement [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RunCucumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Runner.RunCucumberTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="/Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/java/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="magicPinAutomation.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="magicPinAutomation.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Advertisement_TC_002 Verify the user is able to edit the name of an advertisement" />
-        <item itemvalue="Cucumber Java.Scenario: Advertisement_TC_001 Verify the user is able to add new Advertisement" />
-        <item itemvalue="Gradle.MagicPinAdvertisement [dependencies]" />
+        <item itemvalue="Cucumber Java.Feature: 02_MagicPinUsers" />
+        <item itemvalue="Cucumber Java.Scenario: Users_TC_008 Verify the Search functionality working fine" />
+        <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/java/testng.xml" />
+        <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/testng.xml" />
+        <item itemvalue="Gradle.RunCucumberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +176,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669217748629</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit for Advertisement page automation">
+      <created>1669234077138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669234077138</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,5 +196,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit for Advertisement page automation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for Advertisement page automation" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__Users_TC_008_Verify_the_Search_functionality_working_fine.ic" NAME="Scenario: Users_TC_008 Verify the Search functionality working fine Coverage Results" MODIFIED="1669735623407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

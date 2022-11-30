@@ -58,3 +58,8 @@ Feature: MagicPinUsers
     And Tap on the change to Free button
     And Tap on confirmation pop-up
 #    Then Verify Confirmation Text "User Subscription changed Successfully!"
+
+  Scenario: Users_TC_008 Verify the Search functionality working fine
+    When Navigate to home page
+    And Enter the search text and search result for "qaatfresh"
+    Then Verify the searched text "qaatfresh" is present in the result
