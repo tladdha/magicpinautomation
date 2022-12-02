@@ -145,6 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: 02_MagicPinUsers" />
+      <item itemvalue="Cucumber Java.Scenario: Users_TC_008 Verify the Search functionality working fine" />
+      <item itemvalue="Gradle.RunCucumberTest" />
+      <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/java/testng.xml" />
+      <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/testng.xml" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: 02_MagicPinUsers" />
