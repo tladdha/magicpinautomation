@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1192aa83-ae06-4e83-b639-bee27d28358f" name="Changes" comment="added files" />
+    <list default="true" id="b5a2b4fa-1315-41c2-86ff-a0516d00d7e1" name="Changes" comment="added new pull file">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="magicPinAutomation" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -41,7 +49,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HxDGtweAh7D1UiE8NY4sPXe4Vu" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -192,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669991166102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added new pull file">
+      <created>1669993540375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669993540375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,10 +257,15 @@
     <MESSAGE value="Initial commit for Advertisement page automation" />
     <MESSAGE value="Advertisement Page code added" />
     <MESSAGE value="added files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added files" />
+    <MESSAGE value="added new pull file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new pull file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__Users_TC_008_Verify_the_Search_functionality_working_fine.ic" NAME="Scenario: Users_TC_008 Verify the Search functionality working fine Coverage Results" MODIFIED="1669735623407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/magicPinAutomation$_Users_tusharladdha_Documents_magicPinAutomation_magicPinAutomation_src_test_testng_xml.ic" NAME="$PROJECT_DIR$/src/test/testng.xml Coverage Results" MODIFIED="1668429860887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__TC_001_Verify_user_able_to_tap_on_all_the_subscription_plan______Example_n_1.ic" NAME="Scenario: TC_001_Verify user able to tap on all the subscription plan -  - Example n°1 Coverage Results" MODIFIED="1668607923959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
   </component>
