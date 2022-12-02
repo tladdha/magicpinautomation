@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1192aa83-ae06-4e83-b639-bee27d28358f" name="Changes" comment="Advertisement Page code added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1192aa83-ae06-4e83-b639-bee27d28358f" name="Changes" comment="added missing file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +18,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -43,7 +44,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HxDGtweAh7D1UiE8NY4sPXe4Vu" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -147,6 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: 02_MagicPinUsers" />
+      <item itemvalue="Cucumber Java.Scenario: Users_TC_008 Verify the Search functionality working fine" />
+      <item itemvalue="Gradle.RunCucumberTest" />
+      <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/java/testng.xml" />
+      <item itemvalue="TestNG./Users/tusharladdha/Documents/magicPinAutomation/MagicPinAdvertisement/src/test/testng.xml" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: 02_MagicPinUsers" />
@@ -233,6 +241,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__Users_TC_008_Verify_the_Search_functionality_working_fine.ic" NAME="Scenario: Users_TC_008 Verify the Search functionality working fine Coverage Results" MODIFIED="1669735623407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/magicPinAutomation$_Users_tusharladdha_Documents_magicPinAutomation_magicPinAutomation_src_test_testng_xml.ic" NAME="$PROJECT_DIR$/src/test/testng.xml Coverage Results" MODIFIED="1668429860887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__TC_001_Verify_user_able_to_tap_on_all_the_subscription_plan______Example_n_1.ic" NAME="Scenario: TC_001_Verify user able to tap on all the subscription plan -  - Example n°1 Coverage Results" MODIFIED="1668607923959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
   </component>
