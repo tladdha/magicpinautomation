@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1192aa83-ae06-4e83-b639-bee27d28358f" name="Changes" comment="added missing file">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b5a2b4fa-1315-41c2-86ff-a0516d00d7e1" name="Changes" comment="added new pull file">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +21,6 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -196,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669810888682</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added files">
+      <created>1669991166102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669991166102</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added new pull file">
+      <created>1669993540375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669993540375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +256,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit for Advertisement page automation" />
     <MESSAGE value="Advertisement Page code added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Advertisement Page code added" />
+    <MESSAGE value="added files" />
+    <MESSAGE value="added new pull file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new pull file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__Users_TC_008_Verify_the_Search_functionality_working_fine.ic" NAME="Scenario: Users_TC_008 Verify the Search functionality working fine Coverage Results" MODIFIED="1669735623407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
