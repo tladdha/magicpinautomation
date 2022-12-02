@@ -10,10 +10,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class UsersPage {
+    private static final String HOME_URL = "https://admin-test.magicpinapp.net/home/users";
     WebDriver driver;
     private static String[] plans = {"All Subscriptions", "Free", "Trial","Monthly","Lifetime","Grandfather"};
 
@@ -63,7 +66,14 @@ public class UsersPage {
     WebElement changeToFree_button;
     @FindBy(xpath = "//p[text()='Users']/parent::span/parent::a")
     WebElement mainUsers_Text;
-
+    @FindBy(xpath = "//input[@name=\"text\"]")
+    WebElement search_inputField;
+    @FindBy(xpath = "//input[@name=\"text\"]/parent::div/div/button")
+    WebElement search_button;
+    @FindBy(xpath = "//tr/td[3]")
+    List <WebElement> listOfEmailElement;
+    @FindBy(xpath = "//tr/td[2]")
+    List <WebElement> listOfUserNameElement;
 
     //Define all identification methods here...
 
@@ -118,7 +128,7 @@ public class UsersPage {
     }
     public void enterBoardCountAndTapOnAddButton(String x){
         try{
-//            Thread.sleep(3000);
+            Thread.sleep(3000);
             verifyElementPresentOnScreen(addBoard_inputField);
             addBoard_inputField.clear();
             addBoard_inputField.sendKeys(x);
@@ -275,6 +285,66 @@ public class UsersPage {
             verifyElementPresentOnScreen(firstLineUser_row);
         }catch (Exception e){
             Assert.fail("Something went wrong while page load :"+e.getMessage());
+        }
+    }
+    public void goToHomePage(){
+        try{
+            Thread.sleep(2000);
+            driver.get(HOME_URL);
+            Thread.sleep(2000);
+            verifyElementPresentOnScreen(firstLineUser_row);
+        }catch (Exception e){
+            Assert.fail("User not able to navigate back to Home Page..");
+        }
+    }
+    public void searchTheInputText(String inputText){
+        try{
+            verifyElementPresentOnScreen(search_inputField);
+            search_inputField.click();
+            search_inputField.clear();
+            search_inputField.sendKeys(inputText);
+            search_button.click();
+            Thread.sleep(2000);
+            verifyElementPresentOnScreen(firstLineUser_row);
+        }catch(Exception e){
+            Assert.fail("Something went wrong while searching the data on users screen.. "+e.getMessage());
+        }
+    }
+    public void verifyTheSearchTextIsPartOfResult(String inputText){
+        try{
+            boolean emailFlag = false;
+            boolean nameFlag = false;
+            verifyElementPresentOnScreen(firstLineUser_row);
+            List<String> listOfUserNameResult = new ArrayList<>();
+            for (WebElement currentElement:listOfUserNameElement) {
+                String Text = currentElement.getText();
+                listOfUserNameResult.add(Text);
+            }
+            List<String> listOfEmailResult = new ArrayList<>();
+            for (WebElement currentElement:listOfEmailElement) {
+                String Text = currentElement.getText();
+                listOfEmailResult.add(Text);
+            }
+            Iterator<String> itr = listOfUserNameResult.iterator();
+            while(itr.hasNext()) {
+                String s = itr.next();
+                if (s.contains(inputText)) {
+                    nameFlag = true;
+                    break;
+                }
+              }
+            Iterator<String> itr2 = listOfEmailResult.iterator();
+            while (itr2.hasNext()) {
+                String S1 = itr2.next();
+                if (S1.contains(inputText)) {
+                    emailFlag = true;
+                    break;
+                }
+            }
+            System.out.println("nameFlag :"+nameFlag+" emailFlag :"+emailFlag);
+            Assert.assertTrue("Search result not appears under the userName or UserEmail id..",(emailFlag || nameFlag));
+        }catch(Exception e){
+            Assert.fail("Something went wrong while searching the data on users screen.. "+e.getMessage());
         }
     }
 }
