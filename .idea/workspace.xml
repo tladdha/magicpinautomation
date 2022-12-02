@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a2b4fa-1315-41c2-86ff-a0516d00d7e1" name="Changes" comment="added new pull file">
+    <list default="true" id="b5a2b4fa-1315-41c2-86ff-a0516d00d7e1" name="Changes" comment="changed the gradle pml file">
       <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669993540375</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed the gradle pml file">
+      <created>1669994415775</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669994415775</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +264,8 @@
     <MESSAGE value="Advertisement Page code added" />
     <MESSAGE value="added files" />
     <MESSAGE value="added new pull file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new pull file" />
+    <MESSAGE value="changed the gradle pml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the gradle pml file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/magicPinAutomation$Scenario__Users_TC_008_Verify_the_Search_functionality_working_fine.ic" NAME="Scenario: Users_TC_008 Verify the Search functionality working fine Coverage Results" MODIFIED="1669735623407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
